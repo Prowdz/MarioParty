@@ -2,9 +2,8 @@
 execute as @e[x=65,y=58,z=-636,dx=20,dy=3,dz=16,type=armor_stand,name=Mushroom] at @s positioned ~ ~2 ~ run setblock ~ 60 ~ cyan_stained_glass
 execute as @e[type=armor_stand,tag=Center] at @s positioned ~ ~2 ~ run fill ~ ~-1 ~ ~ ~-3 ~ minecraft:red_mushroom_block[down=false,up=false,north=false,east=false,south=false,west=false] replace cyan_stained_glass
 effect give @a[x=65,y=57,z=-636,dx=20,dy=14,dz=16] instant_health 1 30 true
-effect give @a[x=65,y=57,z=-636,dx=20,dy=14,dz=16] instant_health 1 30 true
+execute as @e[type=armor_stand,tag=Center] at @s positioned ~ ~2 ~ run fill ~ ~ ~ ~ ~ ~ minecraft:air replace minecraft:red_mushroom_block
 execute as @e[type=armor_stand,tag=Center] at @s positioned ~ ~2 ~ run fill ~ ~-2 ~ ~ ~-1 ~ minecraft:red_mushroom_block[down=false,up=false,north=false,east=false,south=false,west=false] replace air
-effect give @a[x=65,y=57,z=-636,dx=20,dy=14,dz=16] instant_health 1 30 true
 tag @e[type=armor_stand,name=Global] remove mmWait
 execute if entity @a[x=65,y=61,z=-633,dx=17,dy=3,dz=14] run tag @e[type=armor_stand,name=Global,scores={mmSwitch=130}] add mmWait
 scoreboard players set @e[type=armor_stand,name=Global,tag=mmWait]
