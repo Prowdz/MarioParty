@@ -26,6 +26,6 @@ execute if score #random7 math matches 6 run scoreboard players tag @e[type=armo
 execute if score #random7 math matches 7 run replaceitem entity @e[type=armor_stand,name=Hi] slot.armor.head minecraft:banner 1 0
 execute if score #random7 math matches 7 run scoreboard players tag @e[type=armor_stand,name=Mushroom,tag=Black] add mmSelected
 
-# Activate mmDelay
+# Activate mmDelay (done by loop function)
 scoreboard objectives add mmDelay dummy
 scoreboard players set @e[type=armor_stand,name=Global] mmDelay 0
