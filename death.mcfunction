@@ -5,7 +5,7 @@ tp @a[tag=Dying] ~ 60 ~
 execute as @a[tag=Dying] at @s run summon squid ~ 60 ~ {NoAI:1b,Invulnerable:1b,Tags:["Blooper"]}
 tag @a remove Dying
 execute as @e[x=74,y=57,z=-650,dx=28,dy=4,dz=60,tag=Blooper] at @s run teleport @p[gamemode=adventure,tag=Dead] ~ ~ ~ 90 ~
-execute as @e[x=74,y=57,z=-650,dx=28,dy=4,dz=60,tag=Blooper] at @s run teleport @e[x=74,y=57,z=-650,dx=28,dy=4,dz=60,tag=Blooper,c=1] ~0.2 ~0.0 ~0.0
+execute as @e[x=74,y=57,z=-650,dx=28,dy=4,dz=60,tag=Blooper] at @s run teleport @e[x=74,y=57,z=-650,dx=28,dy=4,dz=60,tag=Blooper,limit=1] ~0.2 ~0.0 ~0.0
 execute as @e[x=45,y=57,z=-650,dx=28,dy=4,dz=60,tag=Blooper] at @s run teleport @p[gamemode=adventure,tag=Dead] ~ ~ ~ -90 ~
 execute as @e[type=squid,tag=Blooper] at @s run particle bubble ~ ~-0.5 ~ 0.5 0 0.5 0.2 2
 tp @e[x=45,y=57,z=-650,dx=28,dy=4,dz=60,tag=Blooper] ~-0.2 ~0.0 ~0.0
