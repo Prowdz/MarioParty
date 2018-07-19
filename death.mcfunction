@@ -1,5 +1,5 @@
 # Repeating
-tag @a[x=45,y=57,z=-650,dx=60,dy=4,dz=60,m=2,tag=!Dead] add Dying
+tag @a[x=45,y=57,z=-650,dx=60,dy=4,dz=60,mode=2,tag=!Dead] add Dying
 tag @a[tag=Dying] add Dead
 tp @a[tag=Dying] ~ 60 ~
 execute as @a[tag=Dying] at @s summon squid ~ 60 ~ {NoAI:1b,Invulnerable:1b,Tags:["Blooper"]}

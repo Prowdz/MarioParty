@@ -1,5 +1,5 @@
 # Impulse
-effect @e[type=shulker,tag=mm] minecraft:invisibility 999999 0 true
+effect give @e[type=shulker,tag=mm] minecraft:invisibility 999999 0 true
 tag @e[type=armor_stand,tag=mmSelected] remove mmSelected
 
 # Randomize color
